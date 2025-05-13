@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+
+    <style>
+        body {
+            font-family: arial;
+            transition: bacground-image 2s ease;
+            animation: bgchange 20s infinite;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        @keyframes bgchange {
+            0% {
+                background-image: url("hhh.GIF");
+            }
+
+            30% {
+                background-image: url("ttt.GIF");
+            }
+
+            40% {
+                background-image: url("ff.GIF");
+            }
+50%{background-image: url("");}
+
+
+
+        }
+
+        /*menu container*/
+
+        ul.menu {
+
+            list-style: none;
+            margin: 0;
+            position: absolute;
+            right: 15%;
+            padding: 0;
+
+            font-size: 10px;
+            text-shadow: 2px 2px 0px green;
+
+        }
+
+        ul.menu>li {
+
+            position: relative;
+            display: inline-block
+        }
+
+        ul.menu>li>a {
+            display: block;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        ul.menu>li:hover {
+            background: #444;
+        }
+
+        /*submenu styling */
+        ul.submenu {
+
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            min-width: 160px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            z-index: 999;
+        }
+
+        ul.submenu li {
+
+            padding: 10px;
+            display: block;
+            color: white;
+            text-decoration: none;
+        }
+
+        ul .submenu li a:hover {
+            background-color: #555;
+        }
+
+        /*showsubmenu on hover*/
+        ul.menu>li:hover .submenu {
+            display: block;
+        }
+
+        header {
+            bottom: 100%;
+            display: flex;
+            background-color: green;
+
+            width: 99%;
+            font-size: 50%;
+        }
+
+        .s {
+            width: 25px;
+            height: 25px;
+            margin-left: 7%;
+            margin-top: 5px;
+        }
+
+        #position {
+            position: absolute;
+            top: 50%;
+            right: 44%;
+            color: black;
+            text-shadow: 2px 2px 2px yellow;
+        }
+
+        .button {
+            position: absolute;
+            top: 70%;
+            right: 55%;
+
+        }
+.button a{
+
+text-decoration: none;
+
+
+}
+        #T {
+            position: absolute;
+            top: 70%;
+            right: 47%
+        }
+        #T a{
+text-decoration: none;
+
+        }
+
+        p {
+            position: absolute;
+            top: 60%;
+            right: 45%
+        }
+
+        .qweenof {
+            position: absolute;
+            width: 98%;
+            height: 90%;
+            opacity: 100%;
+            box-shadow: 60px 60px 1000px 0px red;
+        }
+
+        h1 {
+            position: absolute;
+            right: 85%;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="gg.GIF" class="s">
+        <h1> kira clinic</h1>
+        <ul class="menu">
+            <li><a href="HOME PAGE.HTML"> Home</a></li>
+            <LI><a href="SERIVISESPAGE.HTML">Services</a></LI>
+            <LI><a href="CONTACT PAGE.HTML">About</a></LI>
+            <li><a href="web page2.html">Contact</a></li>
+
+            </LI>
+        </ul>
+
+    </header>
+
+    <h1 id="position">welcome to Kira clinic</h1>
+    <p> muraho amahoroyimana obanenamwe </p>
+    <button style="background-color: green;" class="button"> <a href="#">GET START U</a></button>
+    <button style="background-color: yellowgreen;" id="T"><a href="">CONTACT US</a> </button>
+</body>
+
+</html>
